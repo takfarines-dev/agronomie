@@ -1,0 +1,82 @@
+/*$cd-txt: #6300a0;
+$cd-txt--invalid: #fff;
+$cd-danger: #b20a37;
+.container {
+  margin: 50px auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  width: 100%;
+}
+.form {
+  &__group {
+    & input {
+      border: 2px solid black;
+      border-radius: 100rem;
+      color: $cd-txt;
+      background-color: blanchedalmond;
+      font-family: "Montserrat", sans-serif;
+      font-size: 1.5rem;
+      outline: none;
+      padding: 0.5rem 1.5rem;
+      transition: background-color 500ms;
+      width: 30%;
+      &:focus {
+        border: 2px solid $cd-txt;
+      }
+      &:not(:focus):invalid {
+        background-color: $cd-danger;
+        border: 2px solid $cd-danger;
+        color: $cd-txt--invalid;
+        transform: scale(1.2);
+      }
+      &:valid {
+        background-color: chartreuse;
+        color: black;
+      }
+    }
+  }
+}
+
+.btn {
+  background: blue;
+  font-size: 3rem;
+  cursor: pointer;
+  padding: 1.85rem 3rem;
+  border-radius: 10rem;
+  margin: 5rem;
+  &:hover + .ball {
+    transform: scale(1.35);
+  }
+}
+.ball {
+  text-align: center;
+  width: 50%;
+  height: 40%;
+  background-color: cyan;
+  margin: 5rem;
+  border-radius: 15px;
+}
+
+*/
+.tata {
+  border: 4px solid #011c37;
+  color: lightseagreen;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1.3rem;
+  overflow: hidden;
+  width: 15%;
+  padding: 0.7rem;
+  position: relative;
+  transition: transform 450ms, background-color 300ms 150ms;
+}
+.tata:hover {
+  transform: scale(1.15);
+  background-color: #011c37;
+}
+
+/*# sourceMappingURL=animation.css.map */
